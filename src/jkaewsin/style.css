@@ -4,6 +4,7 @@
     --transition: all 400ms ease;
     --color-primary: #ed7d49;
     --color-white: #e1e2e2;
+    --color-bg: #1e1f1c;
 }
 
 * {
@@ -22,17 +23,12 @@ html {
 
 body {
     color: var(--color-white);
-    background-color: #1e1f1c;
+    background-color: var(--color-bg);
     font-family: 'Kanit', sans-serif;
-    line-height: 1.7;
 }
 
 ::-webkit-scrollbar {
     display: none;
-}
-
-h1, h2, h3, h4, h5 {
-    font-weight: 500;
 }
 
 img {
@@ -41,11 +37,36 @@ img {
     object-fit: cover;
 }
 
-a {
+.social-icons {
     color: var(--color-primary);
     transition: var(--transition);
 }
 
-a:hover {
+.social-icons:hover {
     color: var(--color-white);
+}
+
+.social-container:after {
+    content: '';
+    width: 1px;
+    height: 3rem;
+    margin-left: .5rem;
+    background-color: var(--color-primary);
+}
+
+.btn {
+    width: max-content;
+    display: inline-block;
+    color: var(--color-primary);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+}
+
+.btn:hover {
+    color: var(--color-bg);
+    background-color: var(--color-primary);
+    border-color: transparent;
 }
