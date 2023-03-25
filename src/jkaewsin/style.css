@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;&display=swap');
+
 :root {
     --transition: all 400ms ease;
     --color-primary: #ed7d49;
@@ -21,10 +23,22 @@ html {
 body {
     color: var(--color-white);
     background-color: #1e1f1c;
+    font-family: 'Kanit', sans-serif;
+    line-height: 1.7;
 }
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 500;
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
 }
 
 a {
