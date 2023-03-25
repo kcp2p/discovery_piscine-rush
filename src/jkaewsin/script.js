@@ -18,12 +18,12 @@ $('document').ready(() => {
 
     window.addEventListener('scroll', () => {
         
-        if (window.scrollY < 1360) {
+        if (window.scrollY < 780) {
             navitem[0].className = 'active'
             navitem[1].className = ''
         } 
         
-        else if (window.scrollY >= 1360) {
+        else if (window.scrollY >= 780) {
             navitem[0].className = ''
             navitem[1].className = 'active'
         }
