@@ -1,0 +1,37 @@
+:root {
+    --transition: all 400ms ease;
+    --color-primary: #ed7d49;
+    --color-white: #e1e2e2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--color-white);
+    background-color: #1e1f1c;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--color-white);
+}
