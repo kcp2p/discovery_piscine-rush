@@ -43,6 +43,12 @@ img {
     transition: var(--transition);
 }
 
+.about-icons {
+    color: var(--color-primary);
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
 .social-icons:hover {
     color: var(--color-white);
 }
@@ -103,6 +109,27 @@ nav a:hover {
     background-color: var(--color-gray-700);
 }
 
+.experience-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin: 2rem 5rem;
+}
+
+.experience-card {
+    background-color: var(--color-gray-700);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.experience-card:hover {
+    background-color: var(--color-bg);
+    border-color: var(--color-primary);
+}
+
 @media only screen and (max-width: 480px) {
 
     #header {
@@ -133,6 +160,15 @@ nav a:hover {
 
     nav a:hover {
         background-color: transparent;
+    }
+
+    .experience-container {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 2rem 2rem; 
+    }
+
+    #about {
+        height: 240vh;
     }
 
 }
