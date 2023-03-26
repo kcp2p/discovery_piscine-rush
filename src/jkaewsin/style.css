@@ -114,10 +114,17 @@ nav a.active {
 
 
 /* This code breaks the nav bar on mobile :(, please check with Dimes: iPhone 12 Pro */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
 
     #header {
-        padding-top: 1.5rem;
+        padding-top: 0;
+    }
+
+    img {
+        width: 60%;
+        left: 50%;
+        transform: translateX(32.5%);
+        display: block;
     }
     
     .social-container {
@@ -126,8 +133,9 @@ nav a.active {
         text-align: center;
         gap: 3.5rem;
         position: absolute;
-        margin-bottom: 5rem;
-        margin-left: 22vw;
+        margin-bottom: 10vh;
+        left: 50%;
+        transform: translateX(-72.5%);
     }
 
     .social-container:after {
