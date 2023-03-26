@@ -21,7 +21,9 @@ $('document').ready(() => {
         if (window.scrollY < $('#about').offset().top) {
             navitem[0].className = 'active'
             navitem[1].className = ''
-        } else if (window.scrollY >= $('#about').offset().top) {
+        }
+
+        else if (window.scrollY >= $('#about').offset().top) {
             navitem[0].className = ''
             navitem[1].className = 'active'
         }
