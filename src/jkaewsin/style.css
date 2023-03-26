@@ -103,17 +103,6 @@ nav a:hover {
     background-color: var(--color-gray-700);
 }
 
-/*
-    Assume that mobile users don't have a mouse, in which the hover is cancelled after touching the body...
-    Test case: Dimes --> iPhone 12 Pro then try to scroll using mouse (hover will not be cancelled causing UI glitch)
-*/
-nav a.active {
-    color: var(--color-white);
-    background-color: var(--color-primary);
-}
-
-
-/* This code breaks the nav bar on mobile :(, please check with Dimes: iPhone 12 Pro */
 @media only screen and (max-width: 480px) {
 
     #header {
@@ -142,4 +131,13 @@ nav a.active {
         content: none;
     }
 
+    nav a:hover {
+        background-color: transparent;
+    }
+
+}
+
+nav a.active {
+    color: var(--color-white);
+    background-color: var(--color-primary);
 }
