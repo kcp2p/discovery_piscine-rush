@@ -142,7 +142,7 @@ nav a:hover {
         transform: translateX(32.5%);
         display: block;
     }
-    
+
     .social-container {
         display: flex;
         flex-direction: row;
