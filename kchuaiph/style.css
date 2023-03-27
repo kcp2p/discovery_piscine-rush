@@ -231,13 +231,13 @@ footer a:hover {
 
     .experience-container {
         grid-template-columns: repeat(1, 1fr);
-        margin: 2rem 2rem; 
+        margin: 2rem 2rem;
     }
-    
+
     #about {
         height: 350vh;
     }
-    
+
     #contact {
         height: 250vh;
     }
@@ -245,11 +245,11 @@ footer a:hover {
     .contact-container {
         margin: 0.5rem;
     }
-    
+
     .contact-wrapper {
         position: absolute;
         grid-template-columns: repeat(1, 1fr);
-        margin: 2rem 2rem; 
+        margin: 2rem 2rem;
         left: 50%;
         transform: translateX(-59%);
     }

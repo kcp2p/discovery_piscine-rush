@@ -13,8 +13,35 @@ $('document').ready(() => {
     checkUnavailableHTML()
 
     const navitem = $('#nav').children()
+    let section = window.location.href.split('#')[1]
 
-    navitem[0].className = 'active'
+    switch (section) {
+
+        case 'header':
+            navitem[0].className = 'active'
+            navitem[1].className = ''
+            navitem[2].className = ''
+            break
+
+        case 'about':
+            navitem[0].className = ''
+            navitem[1].className = 'active'
+            navitem[2].className = ''
+            break
+
+        case 'contact':
+            navitem[0].className = ''
+            navitem[1].className = ''
+            navitem[2].className = 'active'
+            break
+
+        default:
+            navitem[0].className = 'active'
+            navitem[1].className = ''
+            navitem[2].className = ''
+            break
+
+    }
 
     navitem[0].onclick = () => {
         navitem[0].className = 'active'
