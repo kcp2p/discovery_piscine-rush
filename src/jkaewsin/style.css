@@ -215,12 +215,11 @@ nav a:hover {
     }
     
     .contact-wrapper {
-        display: grid;
-        grid-template-columns: none;
-        grid-template-rows: repeat(2, 1fr);
-        gap: 0.5rem;
+        position: absolute;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 2rem 2rem; 
         left: 50%;
-        transform: translate(-18vw);
+        transform: translateX(-58.25%);
     }
 
 }
