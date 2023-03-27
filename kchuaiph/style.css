@@ -210,15 +210,7 @@ footer a:hover {
     }
 
     .social-container {
-        display: flex;
-        flex-direction: row !important;
-        text-align: center;
-        gap: 3.5rem !important;
-        position: absolute;
-        margin-top: 20vh !important;
-        //margin-bottom: 10vh !important;
-        left: 50% !important;
-        transform: translateX(-22.5%) !important;
+        visibility: hidden !important;
     }
 
     .social-container:after {
