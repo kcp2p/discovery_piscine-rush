@@ -5,7 +5,7 @@
     --color-primary: #ed7d49;
     --color-white: #e1e2e2;
     --color-bg: #1e1f1c;
-    --color-gray-700: #2f3237;
+    --color-bg-varient: #26272a;
 }
 
 * {
@@ -113,7 +113,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: var(--color-gray-700);
+    background-color: var(--color-bg-varient);
 }
 
 .experience-container {
@@ -124,7 +124,7 @@ nav a:hover {
 }
 
 .experience-card {
-    background-color: var(--color-gray-700);
+    background-color: var(--color-bg-varient);
     border: 1px solid transparent;
     border-radius: 1rem;
     padding: 2rem;
@@ -152,7 +152,7 @@ nav a:hover {
 }
 
 .contact-option {
-    background-color: var(--color-gray-700);
+    background-color: var(--color-bg-varient);
     border: 1px solid transparent;
     border-radius: 1rem;
     padding: 8vh;
