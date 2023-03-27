@@ -1,20 +1,29 @@
 $('document').ready(() => {
 
+    const errMsg = '<h1><br>The current device screen width/height is not compatable to render this website.<br><br>Please adjust the width/height of your screen or use another device.</h1>'
+
     const bodyOnLoad = $('body').html()
 
-    $(window).on('resize', () => {
+    const checkUnavailable = (minWidth, minHeight) => {
 
-        let screen = $(this)
-
-        if (screen.width() < 350 || screen.height() < 640) {
-            $('body').html('<h1>This client is not supported.</h1>')
+        if (minWidth < 350 || minHeight < 640) {
+            $('body').html(errMsg)
             return
         }
 
-        if ($('body').html() === '<h1>This client is not supported.</h1>') {
+        if ($('body').html() === errMsg) {
             $('body').html(bodyOnLoad)
         }
 
+    }
+
+    if ($(window).width() < 350 || $(window).height() < 640) {
+        checkUnavailable($(window).width(), $(window).height())
+    }
+
+    $(window).on('resize', function(){
+        let currentWindow = $(this)
+        checkUnavailable(currentWindow.width(), currentWindow.height())
     })
 
 })
