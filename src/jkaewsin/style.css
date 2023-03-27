@@ -128,7 +128,7 @@ nav a:hover {
     border: 1px solid transparent;
     border-radius: 1rem;
     padding: 2rem;
-    padding-bottom: 45vh;
+    padding-bottom: 25vh;
     text-align: center;
     transition: var(--transition);
 }
@@ -148,7 +148,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    margin: 4rem 0.5rem;
+    margin: 2rem 0.5rem;
 }
 
 .contact-option {
