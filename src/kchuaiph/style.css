@@ -2,7 +2,7 @@
 
 :root {
     --transition: all 400ms ease;
-    --color-primary: #d790c8;
+    --color-primary: #ed7d49;
     --color-white: #e1e2e2;
     --color-bg: #1e1f1c;
     --color-gray-700: #2f3237;
@@ -45,6 +45,13 @@ img {
 
 .about-icons {
     color: var(--color-primary);
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-icons {
+    color: var(--color-primary);
+    transition: var(--transition);
     font-size: 5rem;
     margin-bottom: 1rem;
 }
@@ -109,23 +116,24 @@ nav a:hover {
     background-color: var(--color-gray-700);
 }
 
-.experience-container {
+.grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
-    margin: 2rem 5rem;
+    margin: 4rem 5rem;
 }
 
-.experience-card {
+.grid-card {
     background-color: var(--color-gray-700);
     border: 1px solid transparent;
     border-radius: 1rem;
     padding: 2rem;
+    padding-bottom: 15vh;
     text-align: center;
     transition: var(--transition);
 }
 
-.experience-card:hover {
+.grid-card:hover {
     background-color: var(--color-bg);
     border-color: var(--color-primary);
 }
@@ -136,22 +144,15 @@ nav a:hover {
         padding-top: 0;
     }
 
-    img {
-        width: 60%;
-        left: 50%;
-        transform: translateX(32.5%);
-        display: block;
-    }
-
     .social-container {
         display: flex;
-        flex-direction: row;
+        flex-direction: row !important;
         text-align: center;
-        gap: 3.5rem;
+        gap: 3.5rem !important;
         position: absolute;
-        margin-bottom: 10vh;
-        left: 50%;
-        transform: translateX(-72.5%);
+        margin-bottom: 10vh !important;
+        left: 50% !important;
+        transform: translateX(-72.5%) !important;
     }
 
     .social-container:after {
@@ -162,13 +163,30 @@ nav a:hover {
         background-color: transparent;
     }
 
-    .experience-container {
+    .grid-container {
         grid-template-columns: repeat(1, 1fr);
-        margin: 2rem 2rem;
+        margin: 2rem 2rem; 
+    }
+    
+    #about {
+        height: 300vh;
+    }
+    
+    #contact {
+        height: 300vh;
     }
 
-    #about {
-        height: 240vh;
+    .contact-container {
+        margin: 0.5rem;
+    }
+    
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 0.5rem;
+        left: 50%;
+        transform: translate(-18vw);
     }
 
 }
