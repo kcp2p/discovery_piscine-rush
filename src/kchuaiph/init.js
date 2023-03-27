@@ -5,6 +5,7 @@ $('document').ready(() => {
     const bodyOnLoad = $('body').html()
 
     const checkUnavailable = (passWidth, passHeight) => {
+
         if (passWidth < 350 || passHeight < 640) {
             $('body').html(errMsg)
             return
@@ -12,8 +13,9 @@ $('document').ready(() => {
 
         if ($('body').html() === errMsg) {
             // set body to the saved body
-               $('body').html(bodyOnLoad)
+            $('body').html(bodyOnLoad)
         }
+
     }
 
     // Check on page load once
