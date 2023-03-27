@@ -2,6 +2,10 @@ let active = 'home';
 
 $('document').ready(() => {
 
+    if ($('body').html() === '<h1>This client is not supported.</h1>') {
+        return
+    }
+
     const navitem = $('#nav').children()
 
     navitem[0].className = 'active'
