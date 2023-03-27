@@ -180,13 +180,13 @@ nav a:hover {
 
     .social-container {
         display: flex;
-        flex-direction: row;
+        flex-direction: row !important;
         text-align: center;
-        gap: 3.5rem;
+        gap: 3.5rem !important;
         position: absolute;
-        margin-bottom: 10vh;
-        left: 50%;
-        transform: translateX(-72.5%);
+        margin-bottom: 10vh !important;
+        left: 50% !important;
+        transform: translateX(-72.5%) !important;
     }
 
     .social-container:after {
