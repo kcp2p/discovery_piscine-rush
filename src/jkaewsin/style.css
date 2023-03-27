@@ -121,6 +121,7 @@ nav a:hover {
     border: 1px solid transparent;
     border-radius: 1rem;
     padding: 2rem;
+    padding-bottom: 45vh;
     text-align: center;
     transition: var(--transition);
 }
