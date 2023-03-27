@@ -17,20 +17,20 @@
 
     <body>
 
-        <header class="h-screen pt-4 overflow-hidden" id="header">
-            <h5 class="text-left gap-3.5 absolute mt-4 ml-12 mb-18 font-medium">Greetings,</h5>
+        <header class="pt-4 overflow-hidden" id="header">
+            <h5 class="text-left gap-3.5 absolute mt-4 ml-12 mb-18 font-medium sm:text-4xl text-base font-mono">Greetings,</h5>
             <div class="text-center h-full relative">
                 <div class="w-96 h-96 relative mt-16 overflow-hidden left-[calc(50%_-_12rem)]">
-                    <img class="rounded-3xl" width="1024" height="1024" src="https://media.discordapp.net/attachments/1041870835918585869/1089494557554655342/1678090516236.jpeg?width=1024&height=1024" alt="kchuaiph's Photo">
+                    <img class="rounded-3xl" width="2048" height="2048" src="https://media.discordapp.net/attachments/1041870835918585869/1089494557554655342/1678090516236.jpeg?width=1024&height=1024" alt="kchuaiph's Photo">
                 </div>
 
-                <h1 class="font-medium text-4xl mt-4 typewriter" id="name-txt">Krittin Chuaiphikroh</h1>
+                <h1 class="font-medium sm:text-5xl text-xl mt-4 typewriter" id="name-txt">Krittin Chuaiphikroh</h1>
+                <h5 class="font-normal sm:text-3xl text-xl text-white text-opacity-60 mt-4">A Developer, Security Researcher, and Student.</h5>
+                <h5 class="font-normal sm:text-3xl text-xl text-white text-opacity-60 mt-4">Robotics & AI (6th Gen), SIIE, ENG, KMITL.</h5>
+                <h5 class="font-normal sm:text-3xl text-xl text-white text-opacity-60 mt-4">Alumni: Pre-engineering Electrics Electronics (EP), TGPS, CIT, KMUTNB.</h5>
+                <h5 class="font-normal sm:text-3xl text-xl text-white text-opacity-60 mt-4">Alumni: Yothinburana School, English Program.</h5>
 
-                <h5 class="font-medium text-white text-opacity-60 mt-4">A Developer, Security Researcher, and Student.</h5>
-                <h5 class="font-medium text-white text-opacity-60 mt-4">Alumni of Pre-engineering Electrics Electronics (EP), TGPS, CIT, KMUTNB.</h5>
-                <h5 class="font-medium text-white text-opacity-60 mt-4">Alumni of Yothinburana School, English Program.</h5>
-
-                <div class="social-container flex flex-col text-center gap-3.5 absolute right-0 bottom-20 mr-12 mb-8">
+                <div class="social-container flex flex-col text-center gap-3.5 absolute right-0 bottom-0 mb-0 mr-12">
                     <a href="https://github.com/kcp2p"><i class="social-icons fa-brands fa-github"></i></a>
                     <a href="https://www.instagram.com/kc.p2p"><i class="social-icons fa-brands fa-instagram"></i></a>
                 </div>
@@ -39,15 +39,15 @@
 
         </header>
 
-        <section class="h-screen pt-16 overflow-hidden" id="about">
+        <section class="pt-16 overflow-hidden mt-12" id="about">
 
             <div class="text-center relative">
 
                 <h1 class="font-medium text-5xl mt-4">Experiences</h1>
 
-                <div class="grid-container">
+                <div class="experience-container">
 
-                    <div class="grid-card">
+                    <div class="experience-card sm:text-2xl text-base">
                         <i class="about-icons fa-solid fa-graduation-cap"></i>
                         <h4>Technical Education</h4>
                         <div class="m-4 text-left">
@@ -56,7 +56,7 @@
                         </div>
                     </div>
 
-                    <div class="grid-card">
+                    <div class="experience-card sm:text-2xl text-base">
                         <i class="about-icons fa-solid fa-computer"></i>
                         <h4>Programming</h4>
                         <div class="m-4 text-left">
@@ -66,7 +66,7 @@
                         </div>
                     </div>
 
-                    <div class="grid-card">
+                    <div class="experience-card sm:text-2xl text-base">
                         <i class="about-icons fa-solid fa-bolt"></i>
                         <h4>Electronics & IoT</h4>
                         <div class="m-4 text-left">
@@ -79,35 +79,36 @@
 
         </section>
 
-        <section class="h-screen pt-16 overflow-hidden" id="contact">
+        <section class="pt-6 overflow-hidden" id="contact">
+            
+            <div class="text-center relative ml-20 mr-20">
+                
+                <h1 class="font-medium text-5xl">Contact</h1>
 
-            <div class="text-center relative">
+                <div class="contact-wrapper">
 
-                <h1 class="font-medium text-5xl mt-4">Contacts</h1>
-
-                <div class="grid-container">
-
-                    <div class="grid-card">
+                    <div class="contact-container">
+        
                         <a href="mailto:krittin.c@email.kmutnb.ac.th" target="_blank">
-                            <div>
+                            <div class="contact-option">
                                 <i class="contact-icons fa-solid fa-envelope"></i>
                                 <h4 class="text-xl mt-4">Email</h4>
                                 <h5 class="text-xl mt-4">krittin.c@email.kmutnb.ac.th</h5>
                             </div>
                         </a>
-                    </div>
-
-                    <div class="grid-card">
+        
                         <a href="https://www.instagram.com/kc.p2p">
-                            <div>
+                            <div class="contact-option">
                                 <i class="contact-icons fa-brands fa-instagram"></i>
                                 <h4 class="text-xl mt-4">Instagram</h4>
                                 <h5 class="text-xl mt-4">@kc.p2p</h5>
                             </div>
                         </a>
+        
                     </div>
-
-                    <div class="grid-card">
+                    
+                    <div class="contact-container">
+        
                         <a href="https://github.com/kcp2p">
                             <div class="contact-option">
                                 <i class="contact-icons fa-brands fa-github"></i>
@@ -115,10 +116,19 @@
                                 <h5 class="text-xl mt-4">kcp2p</h5>
                             </div>
                         </a>
-
+        
+                        <a href="https://www.linkedin.com/in/krittin-c/">
+                            <div class="contact-option">
+                                <i class="contact-icons fa-brands fa-linkedin"></i>
+                                <h4 class="text-xl mt-4">LinkedIn</h4>
+                                <h5 class="text-xl mt-4">Krittin Chuaiphikroh</h5>
+                            </div>
+                        </a>
+        
                     </div>
-
+                    
                 </div>
+
 
             </div>
 
@@ -137,6 +147,7 @@
             <div class="footer-copyright absolute right-10 text-gray-300">
                 <small>&copy; kchuaiph 2023, all rights reserved.</small>
             </div>
+                
 
         </footer>
 
