@@ -155,7 +155,7 @@ nav a:hover {
     background-color: var(--color-gray-700);
     border: 1px solid transparent;
     border-radius: 1rem;
-    padding: 10vh;
+    padding: 8vh;
     text-align: center;
     transition: var(--transition);
 }
@@ -167,7 +167,9 @@ nav a:hover {
 
 footer {
     background: linear-gradient(#ec7846, #ef7f4a, #f1874e, #f48e52, #f69556, #f99c5a, #fba35f);
-    padding: 3rem 0;
+    padding: 8rem 0;
+    padding-bottom: 8rem;
+    padding-top: 2rem;
     text-align: center;
     font-size: 1rem;
     margin-top: 7rem;
@@ -175,6 +177,11 @@ footer {
 
 footer a {
     color: var(--color-bg);
+    transition: var(--transition);
+}
+
+footer a:hover {
+    color: var(--color-white);
 }
 
 .footer-logo {
@@ -189,14 +196,11 @@ footer a {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-    margin: 0 auto 3rem;
+    margin: 0 auto 2rem;
 }
 
-.social-footer {
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    margin-bottom: 3.5rem;
+.footer-copyright {
+    color: var(--color-bg);
 }
 
 @media only screen and (max-width: 480px) {
