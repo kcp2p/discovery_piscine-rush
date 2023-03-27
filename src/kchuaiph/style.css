@@ -141,7 +141,9 @@ nav a:hover {
 
 footer {
     background: linear-gradient(to bottom, #221820, #2a1c28, #332030, #3c2538, #452940, #52304b, #5f3757, #6d3e63, #824a76, #97568a, #ad629e, #c46fb3);
-    padding: 3rem 0;
+    padding: 8rem 0;
+    padding-bottom: 8rem;
+    padding-top: 2rem;
     text-align: center;
     font-size: 1rem;
     margin-top: 7rem;
@@ -149,6 +151,11 @@ footer {
 
 footer a {
     color: var(--color-bg);
+    transition: var(--transition);
+}
+
+footer a:hover {
+    color: var(--color-white);
 }
 
 .footer-social {
@@ -168,14 +175,11 @@ footer a {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-    margin: 0 auto 3rem;
+    margin: 0 auto 2rem;
 }
 
-.social-footer {
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    margin-bottom: 3.5rem;
+.footer-copyright {
+    color: var(--color-bg);
 }
 
 @media only screen and (max-width: 480px) {
