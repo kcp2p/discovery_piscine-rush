@@ -19,6 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
+    opacity: 0.6;
 }
 
 section {
