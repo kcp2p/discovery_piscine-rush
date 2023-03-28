@@ -14,7 +14,7 @@ body {
     background-blend-mode: multiply, overlay, color-burn, screen, difference, difference, difference, normal;
     background-size: 400% 400%;
     position: relative;
-    animation: animate 7.5s ease-in-out infinite;
+    animation: animate 30s ease-in-out infinite;
     display: flex;
     justify-content: center;
     align-items: center;
