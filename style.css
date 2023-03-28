@@ -40,7 +40,7 @@ section {
     -ms-user-select: text; /* IE */
     user-select: text; /* CSS3 */
 }
-  
+
 .btn-wrapper > a {
     display: block;
     width: 200px;
