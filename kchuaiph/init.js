@@ -6,7 +6,7 @@ $('document').ready(() => {
 
     const checkUnavailable = (passWidth, passHeight) => {
 
-        if (passWidth < 350 || passHeight < 640) {
+        if (passWidth < 340 || passHeight < 520) {
             $('body').html(errMsg)
             return
         }
@@ -19,7 +19,7 @@ $('document').ready(() => {
     }
 
     // Check on page load once
-    if ($(window).width() < 350 || $(window).height() < 640) {
+    if ($(window).width() < 340 || $(window).height() < 520) {
         checkUnavailable($(window).width(), $(window).height())
     }
 
