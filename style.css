@@ -33,6 +33,12 @@ section {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    -webkit-user-select: text; /* Safari, Chrome */
+    -webkit-user-drag: text;
+    -khtml-user-select: text; /* Konqueror */
+    -moz-user-select: text; /* Firefox */
+    -ms-user-select: text; /* IE */
+    user-select: text; /* CSS3 */
 }
   
 .btn-wrapper > a {
