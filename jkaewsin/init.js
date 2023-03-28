@@ -6,7 +6,7 @@ $('document').ready(() => {
 
     const checkUnavailable = (minWidth, minHeight) => {
 
-        if (minWidth < 350 || minHeight < 640) {
+        if (minWidth < 340 || minHeight < 520) {
             $('body').html(errMsg)
             return
         }
