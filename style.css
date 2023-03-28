@@ -10,7 +10,7 @@ body {
     font-family: 'Poppins', sans-serif;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(-45deg, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);;
+    background: linear-gradient(-45deg, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
     background-size: 400% 400%;
     position: relative;
     animation: animate 7.5s ease-in-out infinite;
@@ -24,12 +24,46 @@ section {
     top: 50%;
     transform: translateY(-50%);
 }
+  
+.btn-wrapper > a {
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
 
-a {
-    color: #fff;
-    background: rgba(255,255,255,.2);
-    padding: 20px;
-    border-radius: 10px;
+.btn-wrapper > a > span {
+    position: relative;
+    z-index: 2;
+}
+
+.btn-wrapper > a:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ffffff;
+    transition: all .35s;
+}
+
+.btn-wrapper > a:hover {
+    color: #000000
+;
+}
+
+.btn-wrapper > a:hover:after {
+    width: 100%;
 }
 
 @keyframes animate{
@@ -68,6 +102,9 @@ a {
     section > div {
         gap: 1rem !important;
         margin-top: 1rem !important;
+        flex-direction: column !important;
+        left: 50% !important;
+        transform: translateX(10%) !important;
     }
 
 }
