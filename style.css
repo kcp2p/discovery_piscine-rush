@@ -10,14 +10,15 @@ body {
     font-family: 'Poppins', sans-serif;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(114.95deg, rgba(235, 0, 255, 0.5) 0%, rgba(0, 0, 0, 0) 38.87%), linear-gradient(180deg, #004B5B 0%, #FFA7A7 100%), linear-gradient(244.35deg, #FFB26A 0%, #3676B1 50.58%, #00A3FF 100%), linear-gradient(244.35deg, #FFFFFF 0%, #007089 49.48%, #FF005C 100%), radial-gradient(100% 233.99% at 0% 100%, #6D3B00 0%, #8FFF00 100%), linear-gradient(307.27deg, #219D87 0.37%, #93C32E 50.19%, #2800C6 100%), radial-gradient(100% 140% at 100% 0%, #FF00C7 0%, #006C7A 49.48%, #760000 100%);
-    background-blend-mode: hard-light, overlay, overlay, overlay, difference, difference, normal;
+    background: linear-gradient(301.28deg, #00C2FF 54.38%, rgba(0, 255, 224, 0) 100%), linear-gradient(129.96deg, #FF2F2F 10.43%, #000460 92.78%), radial-gradient(100% 246.94% at 100% 0%, #8000FF 0%, #BA75FF 54.17%, #FF0000 100%), linear-gradient(58.72deg, #2200F2 0%, #530000 100%), linear-gradient(154.03deg, #FF0000 0%, #00FF94 74.04%), linear-gradient(301.27deg, #FF0000 0%, #0038FF 84.63%), linear-gradient(136.23deg, #00C2FF 11.12%, #FF0000 86.47%), radial-gradient(57.37% 100% at 50% 0%, #B50000 0%, #0034BB 100%);
+    background-blend-mode: multiply, overlay, color-burn, screen, difference, difference, difference, normal;
     background-size: 400% 400%;
     position: relative;
     animation: animate 7.5s ease-in-out infinite;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 section {
@@ -34,8 +35,8 @@ section {
     font-size: 18px;
     font-family: sans-serif;
     text-decoration: none;
-    color: #333;
-    border: 2px solid #333;
+    color: white;
+    border: 2px solid white !important;
     letter-spacing: 2px;
     text-align: center;
     position: relative;
