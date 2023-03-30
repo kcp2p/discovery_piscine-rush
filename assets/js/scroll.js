@@ -47,10 +47,6 @@ $('document').ready(() => {
 
     window.addEventListener('scroll', () => {
 
-        if(executed == false){
-            return
-        }
-
         if (window.scrollY < $('#about').offset().top && (window.scrollY < $('#about').offset().top - 100)) {
             navitem[0].className = 'active'
             navitem[1].className = ''
