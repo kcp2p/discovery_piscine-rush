@@ -11,7 +11,7 @@ $('document').ready(() => {
         $([document.documentElement, document.body]).animate({
             scrollTop: $("#contact").offset().top
         }, 50)
-    }) 
+    })
 
     navitem[0].onclick = () => {
 
@@ -34,19 +34,19 @@ $('document').ready(() => {
         $([document.documentElement, document.body]).animate({
             scrollTop: $("#about").offset().top
         }, 50)
-        
+
     }
-    
+
     navitem[2].onclick = () => {
-        
+
         navitem[0].className = ''
         navitem[1].className = ''
         navitem[2].className = 'active'
-        
+
         $([document.documentElement, document.body]).animate({
             scrollTop: $("#contact").offset().top
         }, 50)
-    
+
     }
 
     window.addEventListener('scroll', () => {
