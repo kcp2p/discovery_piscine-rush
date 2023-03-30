@@ -1,15 +1,5 @@
 $('document').ready(() => {
 
-    const checkUnavailableHTML = () => {
-
-        if ($('body').html() === "<h1><br>The current window width / height is not suitable to render this website.<br><br>Please readjust the width / height or use another device.</h1>") {
-            return
-        }
-
-    }
-
-    checkUnavailableHTML()
-
     const navitem = $('#nav').children()
     const contactButton = $('#contactBtn')
 
@@ -57,7 +47,9 @@ $('document').ready(() => {
 
     window.addEventListener('scroll', () => {
 
-        checkUnavailableHTML()
+        if(executed == false){
+            return
+        }
 
         if (window.scrollY < $('#about').offset().top && (window.scrollY < $('#about').offset().top - 100)) {
             navitem[0].className = 'active'
