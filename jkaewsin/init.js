@@ -1,8 +1,27 @@
+const initScrollTop = (() => {
+
+    let executed = false;
+
+    return () => {
+        if (!executed) {
+
+            executed = true;
+
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#header").offset().top
+            }, 0);
+
+        }
+    };
+
+})();
+
 $('document').ready(() => {
 
     const errMsg = '<h1><br>The current device screen width/height is not compatable to render this website.<br><br>Please adjust the width/height of your screen or use another device.</h1>'
 
     const bodyOnLoad = $('body').html()
+    initScrollTop()
 
     const checkUnavailable = (minWidth, minHeight) => {
 

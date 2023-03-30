@@ -1,8 +1,27 @@
+const initScrollTop = (() => {
+
+    let executed = false;
+
+    return () => {
+        if (!executed) {
+
+            executed = true;
+
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#header").offset().top
+            }, 0);
+
+        }
+    };
+
+})();
+
 $('document').ready(() => {
 
     const errMsg = "<h1><br>The current window width / height is not suitable to render this website.<br><br>Please readjust the width / height or use another device.</h1>"
 
     const bodyOnLoad = $('body').html()
+    initScrollTop()
 
     const checkUnavailable = (passWidth, passHeight) => {
 
